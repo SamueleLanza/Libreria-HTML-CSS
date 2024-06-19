@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: url('Immagini/img.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.wrapper {
+   width: 420px;
+   background: transparent;
+   border: 2px solid tan;
+   color: tan;
+   border-radius: 10px;
+   padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid tan;
+    border-radius: 40px;
+    font-size: 16px;
+    color: tan;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color:tan ;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input-box box-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .Ricordami {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.Ricordami label input {
+    accent-color: tan;
+    margin-right: 3px;
+}
+
+.Ricordami a{
+    color: tan;
+    text-decoration: none;
+}
+
+.Ricordami a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: tan;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.wrapper .registrati {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registrati p a {
+    color: tan;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login p a{
+    color: tan;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrati p a:hover {
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: tan;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.navbar:hover {
+    background-color: #111;
+}
+
+.navbar li >a[href^="#"] {
+    color: white;
+}
+
+.footer {
+    background-color: tan;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
