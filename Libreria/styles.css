@@ -139,6 +139,12 @@ body {
     
 }
 
+.Logo {
+    position: absolute;
+    top: 20%;
+    float: left;
+}
+
 .content {
     padding: 20px;
 }
@@ -158,7 +164,7 @@ body {
 }
 
 .navbar li {
-    float: left;
+    float: right;
 }
 
 .navbar li > a {
