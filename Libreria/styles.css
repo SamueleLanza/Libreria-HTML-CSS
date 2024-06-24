@@ -19,6 +19,9 @@ body {
    background: url('Immagini/img.jpg') no-repeat center fixed;
    background-size: 1920px 1080px;
    background-position: center;
+   margin: 0;
+   padding: 0;
+   position: relative;
 }
 
 .wrapper {
@@ -205,3 +208,69 @@ a.navbar:hover {
     width: 100%;
     bottom: 0;
 }
+
+#azione {
+    color: rgb(173, 147, 113);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+header {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+
+}
+
+h1{
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 42%;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 42%;
+    font-size: 26px;
+}
+
+.menu {
+    display: block;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin-bottom: 5px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: brown;
+    display: block;
+    padding: 8px 15px;
+    background-color: white;
+  }
+  
+  .menu ul li a:hover {
+    background-color: transparent;   
+}
+
+  
