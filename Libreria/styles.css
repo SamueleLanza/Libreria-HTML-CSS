@@ -16,17 +16,39 @@ body {
 /* Stile per l'header */
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
+    
 }
 
 h1 {
+    width: 420px;
     font-size: 36px;
     color: rgb(173, 147, 113);
+    background: #555;
+   border: 2px solid rgb(173, 147, 113);
+   color: rgb(173, 147, 113);
+   border-radius: 10px;
+   padding: 30px 40px;
+   margin: auto;
+   top: 30%;
+   left: 38%;
+   transform: (-50%,-50%);
+   align-items: center;
 }
 
 h2 {
+
     font-size: 26px;
     color: #555;
+}
+
+
+#titolo {
+    text-align: center;
+}
+
+#domande  {
+    text-align: center;
 }
 
 /* Navbar */
@@ -34,7 +56,7 @@ h2 {
     font-size: 18px;
     background-color: rgb(173, 147, 113);
     color: white;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     height: 60px;
@@ -100,6 +122,32 @@ h2 {
     width: 100%;
 }
 
+.content {
+    border: 2px solid rgb(173, 147, 113); 
+    margin: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: justify;
+    font-size: 19px;
+}
+
+
+
+.faq-element {
+    display: block;
+    font-size: 20px;
+    color: rgb(173, 147, 113);
+    background: transparent;
+    border: 2px solid rgb(173, 147, 113);
+    color: rgb(173, 147, 113);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 10px;
+    background-color: white;
+}
+
 .image {
     display: block;
     width: 100%;
@@ -135,7 +183,7 @@ h2 {
     position: absolute;
     top: 0%;
     left: 0%;
-    text-align: right;
+    text-align: center;
 }
 
   
@@ -161,7 +209,7 @@ p {
 #azione div, #Avventura div {
     display: inline-block;
     width: 30%;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
 }
 
