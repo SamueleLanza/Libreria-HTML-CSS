@@ -1,204 +1,176 @@
+/* Resetta i margini e i padding di default */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-#main-header {
-    background-color: rgb(173, 147, 113);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+/* Stile per il corpo della pagina */
 body {
-   display: flex; 
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   background: url('Immagini/img.jpg') no-repeat center fixed;
-   background-size: 1920px 1080px;
-   background-position: center;
-   margin: 0;
-   padding: 0;
-   position: relative;
+    font-family: Arial, sans-serif;
+    background: url('Immagini/img.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: #333;
+    padding-top: 80px; /* Per lasciare spazio alla navbar */
 }
 
-.wrapper {
-   width: 420px;
-   background: transparent;
-   border: 2px solid rgb(173, 147, 113);
-   color: rgb(173, 147, 113);
-   border-radius: 10px;
-   padding: 70px 40px;
-   margin-top: 100px;
-   margin-bottom: 100px;
-}
-
-.content {
-    font-size: 26px;
+/* Stile per l'header */
+header {
     text-align: center;
-    text-justify: auto;
+    padding: 20px 0;
 }
 
-.wrapper h1 {
+h1 {
     font-size: 36px;
-    text-align: center;
-}
-
-.wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    margin: 40px;
-    padding-right: 85px;
-}
-
-#info {
-    padding-bottom: 80px;
-    padding-left: 25px;
-}
-
-#Messaggio {
-    padding-bottom: 90px;
-    padding-left: 40px;
-}
-
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgb(173, 147, 113);
-    border-radius: 40px;
-    font-size: 16px;
     color: rgb(173, 147, 113);
-    padding: 20px 45px 20px 20px;
 }
 
-.input-box input::placeholder {
-    color:rgb(173, 147, 113) ;
+h2 {
+    font-size: 26px;
+    color: #555;
 }
 
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-.wrapper .Ricordami {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    margin: -15px 0 15px;
-}
-
-.Ricordami label input {
-    accent-color: rgb(173, 147, 113);
-    margin-right: 3px;
-}
-
-.Ricordami a{
-    color: rgb(173, 147, 113);
-    text-decoration: none;
-}
-
-.Ricordami a:hover {
-    text-decoration: underline;
-}
-
-.wrapper .btn {
-    width: 100%;
-    height: 45px;
-    background: rgb(173, 147, 113);
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
-}
-
-.wrapper .registrati {
-    font-size: 15px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.registrati p a {
-    color: rgb(173, 147, 113);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login p a{
-    color: rgb(173, 147, 113);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.registrati p a:hover {
-    text-decoration: underline;
-}
-
-.navbar{
-    font-size: x-large;
+/* Navbar */
+.navbar {
+    font-size: 18px;
     background-color: rgb(173, 147, 113);
+    color: white;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 60px;
-    position: fixed;
-    top: 0px;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.Logo {
-    position: absolute;
-    top: 20%;
-    float: left;
-}
-
-.content {
-    padding: 20px;
-}
-
-.content h2 {
-    color: rgb(173, 147, 113);
-    border: 2px solid rgb(173, 147, 113);
-    border-radius: 40px;
-}
-
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    list-style: none;
+    display: flex;
 }
 
 .navbar li {
-    float: right;
+    display: inline;
 }
 
-.navbar li > a {
-    display: block;
+.navbar a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 15px;
 }
 
-a.navbar:hover {
+.navbar a:hover {
     background-color: #111;
 }
 
-.navbar li >a[href^="#"] {
+/* Stile per il menu laterale */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(173, 147, 113);
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.menu a:hover {
+    background-color: rgb(173, 147, 113);
     color: white;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0; /* L'overlay è inizialmente trasparente */
+    
+    transition: opacity 0.3s;
+}
+
+.container:hover .image {
+    opacity: 0.2;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: right;
+}
+
+  
+
+/* Stile per le sezioni dei libri */
+#azione, #Avventura {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 80%;
+}
+
+h3 {
+    color: rgb(173, 147, 113);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Stile per le immagini dei libri */
+#azione div, #Avventura div {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+#azione img, #Avventura img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stile per il footer */
 .footer {
     background-color: rgb(173, 147, 113);
     color: white;
@@ -208,69 +180,3 @@ a.navbar:hover {
     width: 100%;
     bottom: 0;
 }
-
-#azione {
-    color: rgb(173, 147, 113);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-header {
-    text-align: center;
-    margin-top: 0;
-    padding: 20px 0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-
-}
-
-h1{
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    left: 42%;
-    font-size: 36px;
-}
-
-h2 {
-    margin: 0;
-    position: absolute;
-    top: 60px;
-    left: 42%;
-    font-size: 26px;
-}
-
-.menu {
-    display: block;
-    margin: 10px;
-    padding-left: 10px;
-    text-align: center;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu ul li {
-    margin-bottom: 5px;
-  }
-
-  .menu ul li a {
-    text-decoration: none;
-    color: brown;
-    display: block;
-    padding: 8px 15px;
-    background-color: white;
-  }
-  
-  .menu ul li a:hover {
-    background-color: transparent;   
-}
-
-  
