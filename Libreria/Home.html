@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -12,9 +12,14 @@
         <div id="main-header">
             <h1>Arcadia dei Libri</h1>
         </div>
-        
+        <div class="nuovilibri" id="catNuoviArrivi">
+            <h2>Nuovi Arrivi!</h2>
+            <div class="libro" id="nuoviarrivi">
+                <img src="Immagini/nuoviarrivi.jpg" alt="nuoviarrivi" width="700px" height="300px">
+            </div>
+        </div>
     </header>
-    <!-- Navbar -->
+    
     <nav class="navbar"> 
         <ul> 
             <li> <a href="#">Home</a> </li> 
@@ -28,15 +33,39 @@
         </div>
     </nav>
    
-    <div class="content">
-        <p>La nostra libreria è un punto di riferimento per tutti gli amanti dei libri. Offriamo una vasta selezione di titoli che spaziano dalla narrativa alla saggistica, dai libri per bambini ai manuali tecnici. 
-            Il nostro staff è sempre pronto ad assistervi nella scelta del libro giusto e a offrirvi consigli personalizzati. 
-            Organizziamo regolarmente eventi, incontri con gli autori e laboratori di lettura per tutte le età. 
-            Venite a trovarci e scoprite il piacere della lettura in un ambiente accogliente e stimolante.
+    <div class="content" id="testoHome">
+        <h3>La nostra libreria</h3>
+        <p> La nostra libreria è un punto di riferimento per tutti gli amanti dei libri.<br> Offriamo una vasta selezione di titoli che spaziano dalla narrativa alla saggistica, dai libri per bambini ai manuali tecnici. <br> 
+            Il nostro staff è sempre pronto ad assistervi nella scelta del libro giusto e a offrirvi consigli personalizzati. <br>
+            Organizziamo regolarmente eventi, incontri con gli autori e laboratori di lettura per tutte le età.  <br>
+            Venite a trovarci e scoprite il piacere della lettura in un ambiente accogliente e stimolante. 
         </p>
     </div>
 
-    <!-- Footer -->
+
+
+<div class="nuovilibri">
+    <h2>Libri in evidenza</h2>
+    <div class="listalibri">
+        <div class="libro">
+            <img src="Immagini/horror2.jpg" alt="Libro 1" width="300" height="300">
+            <h3>Horror</h3>
+           
+        </div>
+        <div class="libro">
+            <img src="Immagini/azione1.jpg" alt="Libro 2" width="300" height="300">
+            <h3>Il Trono Di Spade</h3>
+           
+        </div>
+        <div class="libro">
+            <img src="Immagini/avventura3.jpg" alt="Libro 3">
+            <h3>La Mappa Dei Desideri</h3>
+            
+        </div>
+    </div>
+</div>
+
+   
     <footer class="footer">
         <p>© Arcadia dei libri 2024. Custodiamo con cura i diritti riservati.</p>
     </footer>

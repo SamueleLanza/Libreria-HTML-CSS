@@ -1,0 +1,324 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('Immagini/img.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: #333;
+    padding-top: 80px; 
+}
+
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    width: 420px;
+    font-size: 36px;
+    color: rgb(173, 147, 113);
+    background: #555;
+    border: 2px solid rgb(173, 147, 113);
+    color: rgb(173, 147, 113);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: auto;
+    top: 30%;
+    left: 38%;
+    transform: (-50%,-50%);
+    align-items: center;
+}
+
+h2 {
+    font-size: 26px;
+    color: #555;
+}
+
+#titolo {
+    text-align: center;
+}
+
+#domande {
+    text-align: center;
+}
+
+
+.navbar {
+    font-size: 18px;
+    background-color: rgb(173, 147, 113);
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navbar a:hover {
+    background-color: #111;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(173, 147, 113);
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.menu a:hover {
+    background-color: rgb(173, 147, 113);
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.content {
+    border: 2px solid rgb(173, 147, 113); 
+    margin: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 19px;
+}
+
+#testoHome {
+    font-size: 23px;
+}
+
+.faq-element {
+    display: block;
+    font-size: 20px;
+    color: rgb(173, 147, 113);
+    background: transparent;
+    border: 2px solid rgb(173, 147, 113);
+    color: rgb(173, 147, 113);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 10px;
+    background-color: white;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 90%;
+    transition: opacity 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: opacity 0.3s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:hover .image {
+    opacity: 0.2;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    color: rgb(173, 147, 113);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+#azione, #avventura, #horror {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 80%;
+}
+
+h3 {
+    color: rgb(173, 147, 113);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    background-color: rgb(173, 147, 113);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+.nuovilibri {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nuovilibri h2 {
+    color: rgb(173, 147, 113);
+    margin-bottom: 20px;
+}
+
+.listalibri {
+    display: flex;
+    justify-content: space-around;
+}
+
+.libro {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.libro img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+#nuoviarrivi {
+    width: 100%;
+    height: 90%;
+}
+
+.libro h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.libro p {
+    font-size: 16px;
+    color: #555;
+}
+
+.section {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.section .article-title {
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.faq-element {
+    margin-bottom: 20px;
+}
+
+.faq-element h2 {
+    font-size: 24px;
+    color: rgb(173, 147, 113);
+    border-bottom: 2px solid rgb(173, 147, 113);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-element p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.faq-element a {
+    color: rgb(173, 147, 113);
+    text-decoration: underline;
+}
+
+.faq-element a:hover {
+    text-decoration: none;
+    color: #555;
+}
